@@ -19,7 +19,7 @@ void main() {
               ClipRRect(
                 borderRadius: BorderRadius.circular(100),  // ทำให้รูปภาพเป็นวงกลม
                 child: Image.asset(
-                  "assets/images/picture1.jpg", // ระบุ path ของไฟล์รูปภาพใน assets
+                  "assets/images/person.jpg", // ระบุ path ของไฟล์รูปภาพใน assets
                   width: 150, // ขนาดรูปภาพ
                   height: 150,
                   fit: BoxFit.cover,  // ทำให้รูปภาพไม่ยืดหรือหด
@@ -29,7 +29,7 @@ void main() {
 
               // แสดงข้อมูลชื่อ
               Text(
-                "Sirapat Kanhamee",
+                "Phattanison Kaison",
                 style: TextStyle(
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
@@ -40,7 +40,7 @@ void main() {
               
               // ข้อมูล nickname
               Text(
-                "Nickname: Champ",
+                "Nickname: Phakbung",
                 style: TextStyle(fontSize: 20, color: Colors.black54),
               ),
               SizedBox(height: 20),
@@ -49,7 +49,7 @@ void main() {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  _buildInfoColumn("Hobby", "Read a Manga"),
+                  _buildInfoColumn("Hobby", "read a book"),
                   _buildInfoColumn("Food", "Noodles"),
                 ],
               ),
@@ -58,7 +58,7 @@ void main() {
               // ข้อมูลสถานที่เกิด
               _buildSectionTitle("Birthplace"),
               Text(
-                "Kampheng Phet",
+                "Phichit",
                 style: TextStyle(fontSize: 18, color: Colors.black),
               ),
               SizedBox(height: 20),
@@ -68,9 +68,9 @@ void main() {
               SizedBox(height: 10),
 
               // การศึกษา
-              _buildEducationCard("Elementary", "Watchara Sahasuksa School", "2015"),
-              _buildEducationCard("Primary", "Rahan Wittaya School", "2018"),
-              _buildEducationCard("High School", "Rahan Wittaya School", "2022"),
+              _buildEducationCard("Elementary", "Watkaosai School", "2015"),
+              _buildEducationCard("Primary", "Kaosai tapklo Wittaya School", "2018"),
+              _buildEducationCard("High School", "Kaosai tapklo Wittaya School", "2022"),
               _buildEducationCard("Undergrad", "Naresuan University", "2026"),
             ],
           ),
